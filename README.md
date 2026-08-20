@@ -65,6 +65,63 @@ A documentação detalhada está disponível na pasta `docs`.
 - [Plano de comunicação](docs/plano-de-comunicacao.md)
 - [Uso de IA Generativa](docs/uso-de-ia-generativa.md)
 
+## Engenharia de Requisitos
+
+Como parte da atividade de análise e especificação de requisitos, o cenário do RISC Convert também foi utilizado para identificar, organizar e representar requisitos funcionais, requisitos não funcionais, regras de negócio, lacunas, ambiguidades e artefatos de especificação.
+
+A atividade utilizou Inteligência Artificial Generativa como ferramenta de apoio à análise, classificação e estruturação dos requisitos, mantendo a revisão humana como etapa obrigatória antes da incorporação das sugestões aos documentos finais.
+
+### Artefatos produzidos
+
+#### Análise de requisitos
+
+* [Requisitos Funcionais](requisitos/requisitos-funcionais.md)
+* [Requisitos Não Funcionais](requisitos/requisitos-nao-funcionais.md)
+* [Regras de Negócio](requisitos/regras-de-negocio.md)
+* [Lacunas e Ambiguidades](requisitos/lacunas-e-ambiguidades.md)
+
+#### Especificação
+
+* [Histórias de Usuário](requisitos/historias-de-usuario.md)
+* [Casos de Uso](requisitos/casos-de-uso.md)
+* [Critérios de Aceitação](requisitos/criterios-de-aceitacao.md)
+* [Matriz de Rastreabilidade](requisitos/matriz-de-rastreabilidade.md)
+
+### Abordagem adotada
+
+A especificação foi organizada de forma a manter rastreabilidade entre os diferentes artefatos.
+
+De maneira geral, foi utilizada a seguinte relação:
+
+`Requisito → Regra de Negócio → História de Usuário → Caso de Uso → Critério de Aceitação`
+
+Quando uma informação necessária não estava definida no cenário, ela não foi assumida automaticamente como requisito. O ponto foi registrado como lacuna, ambiguidade ou decisão pendente de validação.
+
+Essa abordagem foi especialmente importante durante o uso de IA Generativa, pois algumas sugestões apresentadas pela ferramenta eram plausíveis, mas não possuíam respaldo suficiente no cenário.
+
+### Uso de Inteligência Artificial Generativa
+
+A IA Generativa apoiou principalmente:
+
+* classificação inicial dos requisitos;
+* identificação de requisitos funcionais e não funcionais;
+* separação entre requisitos e regras de negócio;
+* identificação de lacunas e ambiguidades;
+* elaboração inicial de histórias de usuário;
+* geração de cenários de aceitação em Gherkin;
+* identificação de fluxos alternativos e de exceção;
+* construção da rastreabilidade entre os artefatos.
+
+As sugestões produzidas pela IA foram analisadas antes de serem incorporadas.
+
+Foram modificadas ou descartadas sugestões que:
+
+* introduziam funcionalidades não definidas no cenário;
+* atribuíam valores quantitativos sem fonte;
+* transformavam hipóteses em requisitos;
+* apresentavam critérios subjetivos ou não verificáveis;
+* aumentavam desnecessariamente o escopo da solução.
+
 ## Aviso acadêmico
 
 Este repositório foi desenvolvido exclusivamente para fins acadêmicos.
